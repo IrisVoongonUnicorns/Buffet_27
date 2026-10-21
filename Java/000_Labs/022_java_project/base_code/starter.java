@@ -12,7 +12,9 @@ class starter {
 		// the command window when you compile and run this program.
 	Scanner fx = new Scanner(System.in);
 		int hs = (int)(Math.random()*100+1);
-    System.out.println("Welcome, pick a value from ");
+    System.out.println("Welcome, pick a value from 1 to 100.");
+
+	int ti = hs.nextInt();
 		
 	}
 }
