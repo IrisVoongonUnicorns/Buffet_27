@@ -47,8 +47,28 @@ class starter {
 				System.out.println("You're out of luck loser, better luck next time.");
 				System.out.println("You now have $" + (mon-yen) + ".");
 			}
-			else if (nu==aes && aes!=mb);
-			System.out.println("You've won! Your wager has now doubled.");
-			
+			else if (nu==aes && aes!=mb);{
+				System.out.println("You've won! Your wager has now doubled.");
+				System.out.println("You now have $" + (mon+(yen*2)) + ".");
+			}
+			else if (nu!=aes && aes==mb);{
+				System.out.println("You've won! Your wager has now doubled.");
+				System.out.println("You now have $" + (mon+yen*2) + ".");
+			}
+			else if (nu==aes && aes!=mb);{
+				System.out.println("You've won! Your wager has now doubled.");
+				System.out.println("You now have $" + (mon+yen*2) + ".");
+			}
+			else if (nu!=aes && nu==mb);{
+				System.out.println("You've won! Your wager has now doubled.");
+				System.out.println("You now have $" + (mon+yen*2) + ".");
+			}
+			else{
+				System.out.println("Would you like to play the Slots? (Yes/yes/Y/y)");
+				H2H=fx.next();
+				if (H2H.equals("No") || H2H.equals("no") || H2H.equals("N") || H2H.equals("n")){
+			System.out.println("Okay, Come back tomorrow! $" + mon + " left to spend.");
+			}
+			}
 	}
 }
